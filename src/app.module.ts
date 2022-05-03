@@ -20,7 +20,7 @@ import { ClassService } from './services/class.service';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb://127.0.0.1:27017/back-app'
+      'mongodb+srv://Project:<123456789Pina>@cluster0.tdiqr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
     ),
     MongooseModule.forFeature([
       { 
