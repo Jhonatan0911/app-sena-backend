@@ -20,7 +20,7 @@ import { ClassService } from './services/class.service';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://Project:<123456789Pina>@cluster0.tdiqr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+      'mongodb+srv://sena:sena@cluster0.1beq8.mongodb.net/sena?retryWrites=true&w=majority'
     ),
     MongooseModule.forFeature([
       { 
