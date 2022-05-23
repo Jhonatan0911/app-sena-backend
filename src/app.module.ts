@@ -20,7 +20,7 @@ import { ClassService } from './services/class.service';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://sena:sena@cluster0.1beq8.mongodb.net/sena?retryWrites=true&w=majority'
+      'mongodb://localhost/nest'
     ),
     MongooseModule.forFeature([
       { 
@@ -32,19 +32,11 @@ import { ClassService } from './services/class.service';
         name: 'Class',
         schema: ClassSchema,
         collection: 'Class'
-      },
+      }
     ]),
+
   ],
-  controllers: [
-    AppController,
-    UsersController,
-    ClassController,
-    
-  ],
-  providers: [
-    AppService,
-    UsersService,
-    ClassService
-  ],
+  controllers: [AppController,UsersController,ClassController,],
+  providers: [AppService,UsersService,ClassService],
 })
 export class AppModule {}
