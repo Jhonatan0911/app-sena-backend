@@ -20,7 +20,7 @@ import { ClassService } from './services/class.service';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb://localhost/nest'
+      'mongodb+srv://sena:sena@cluster0.tdiqr.mongodb.net/?retryWrites=true&w=majority'
     ),
     MongooseModule.forFeature([
       { 
